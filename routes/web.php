@@ -3,7 +3,7 @@
 use App\Http\Controllers\AttractionsController;
 use App\Http\Controllers\CulinaryController;
 use App\Http\Controllers\HotelsController;
-use App\Http\Controllers\NewsController;
+use App\Http\Controllers\EventController;
 use Illuminate\Support\Facades\Route;
 
 
@@ -28,7 +28,7 @@ Route::prefix('pontos-turisticos')
 
 Route::prefix('eventos')
     ->group(function () {
-        Route::resource('news', NewsController::class);
+        Route::resource('event', EventController::class);
     });
 
 Auth::routes();
