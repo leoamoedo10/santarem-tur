@@ -4,7 +4,7 @@
     <div class="text-white footer-clean" id="footer">
         <footer id="footer-container">
             <nav class="container">
-                <div class="mb-4">
+                {{-- <div class="mb-4">
                     <a href="/">
                         <img src="/assets/logo-pms-white.png" class="img-fluid">
                     </a>
@@ -64,8 +64,8 @@
                             </a>
                         </div>
                         <p class="copyright">Prefeitura de Santarém © 2021</p>
-                    </div>
-                    <small class="col-12 text-center mt-5 mb-2">Desenvolvido pelo Núcleo de Tecnologia da Informação - NTI</small>
+                    </div> --}}
+                    <small class="col-12 text-center mt-5 mb-2">Desenvolvido por <strong>Leonardo Amoedo</strong></small>
                 </div>
             </nav>
         </footer>
