@@ -1,12 +1,8 @@
 <div class="navbar-background">
     <div class="container py-5">
         <div class="row d-flex align-items-center mb-5">
-            <div class="col-md-4">
-                <img src="/assets/logo-pms-white.png" width="300" class="img-fluid">
-            </div>
             <div class="col-md-8 align-self-center text-white">
                 <h1 class="display-1 mb-0"><strong>SANTARÉM TURISMO</strong></h1>
-                <h4 class="mb-0">SECRETARIA MUNICIPAL DE TURISMO</h4>
             </div>
         </div>
         <section id="nav-menu">
@@ -31,7 +27,7 @@
                                 <a class="nav-link text-default" href="{{ route('attractions.index') }}">Pontos turísticos</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-default" href="{{ route('news.index') }}">Eventos</a>
+                                <a class="nav-link text-default" href="{{ route('event.index') }}">Eventos</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link text-default" href="#contact-us">Fale Conosco</a>
