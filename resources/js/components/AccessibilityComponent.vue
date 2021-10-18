@@ -63,6 +63,14 @@
                     <span class="badge bg-default">alt+6</span>
                 </a>
             </li>
+            <li class="nav-item">
+                <a
+                    class="nav-link d-md-block py-1 py-sm-2 link-default"
+                    href="login"
+                >
+                    Acessar Administrador
+                </a>
+            </li>
         </ul>
     </section>
 </template>
