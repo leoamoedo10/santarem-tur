@@ -2,35 +2,27 @@
 
 use App\Http\Controllers\AttractionsController;
 use App\Http\Controllers\CulinaryController;
-use App\Http\Controllers\HotelsController;
 use App\Http\Controllers\EventController;
+use App\Http\Controllers\HotelsController;
 use Illuminate\Support\Facades\Route;
 
+Auth::routes();
 
 Route::get('/', function () {
     return view('portal.index');
 });
 
-Route::prefix('hoteis')
-    ->group(function () {
-        Route::resource('hotels', HotelsController::class);
-    });
+Route::resource('hotels', HotelsController::class);
+Route::resource('culinary', CulinaryController::class);
+Route::resource('attractions', AttractionsController::class);
+Route::resource('event', EventController::class);
 
-Route::prefix('culinaria')
-    ->group(function () {
-        Route::resource('culinary', CulinaryController::class);
-    });
+// Route::middleware('admin')
+//     ->prefix('admin')
+//     ->group(function () {
+//         Route::resource('admin', 'AdminController');
+//         Route::resource('unit', 'UnitController');
+//         Route::resource('category', 'ContentCategoryController');
+//         Route::resource('area', 'AreaController');
 
-Route::prefix('pontos-turisticos')
-    ->group(function () {
-        Route::resource('attractions', AttractionsController::class);
-    });
-
-Route::prefix('eventos')
-    ->group(function () {
-        Route::resource('event', EventController::class);
-    });
-
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+//     });
