@@ -1,8 +1,8 @@
-<div class="bg-background">
+<div style="background-color: #0da0bd">
     <div class="container">
         <div class="row py-5 d-flex justify-content-between">
             <div id="contact-us" class="col-md-5">
-                <h2 class="mb-3">Fale Conosco</h2>
+                <h2 class="mb-3 text-white">Fale Conosco</h2>
                 <div class="card">
                     <div class="card-body">
                         <form method="post">
@@ -30,7 +30,7 @@
                 </div>
             </div>
             <div class="col-md-7 d-flex justify-content-center">
-                <img src="/assets/contact_us.svg" alt="" width="600px" class="img-fluid">
+                <img src="/assets/contact-us.svg" alt="" width="600px" class="img-fluid">
             </div>
         </div>
     </div>
