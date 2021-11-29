@@ -2,28 +2,12 @@
     <section class="container-fluid bg-light" id="accessibility">
         <ul class="nav justify-content-center">
             <li class="nav-item">
-                <a
-                    class="nav-link d-md-block py-1 py-sm-2 link-default"
-                    href="#main-container"
-                    accesskey="1"
-                >
-                    Ir para o conteúdo
-                    <span class="badge bg-default">alt+1</span>
-                </a>
-            </li>
-            <li class="nav-item d-none d-md-block">
                 <a class="nav-link py-1 py-sm-2 link-default" href="#nav-menu" accesskey="2">
                     Ir para o menu
                     <span class="badge bg-default">alt+2</span>
                 </a>
             </li>
-            <li class="nav-item d-none d-md-block">
-                <a class="nav-link py-1 py-sm-2 link-default" href="#search-container" accesskey="3">
-                    Ir para a busca
-                    <span class="badge bg-default">alt+3</span>
-                </a>
-            </li>
-            <li class="nav-item d-none d-md-block">
+            <li class="nav-item">
                 <a class="nav-link py-1 py-sm-2 link-default" href="#footer-container" accesskey="4">
                     Ir para o rodapé
                     <span class="badge bg-default">alt+4</span>
@@ -65,7 +49,7 @@
             </li>
             <li class="nav-item">
                 <a
-                    class="nav-link d-md-block py-1 py-sm-2 link-default"
+                    class="nav-link py-1 py-sm-2 link-default"
                     href="login"
                 >
                     Acessar Administrador
