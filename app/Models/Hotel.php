@@ -7,5 +7,13 @@ use Illuminate\Database\Eloquent\Model;
 
 class Hotel extends Model
 {
-    protected $fillable = ['name', 'informations', 'contact'];
+    use HasFactory;
+
+    protected $fillable = [
+        'name',
+        'informations',
+        'contact',
+        'address',
+        'image'
+    ];
 }
