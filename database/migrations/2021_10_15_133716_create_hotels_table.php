@@ -18,6 +18,8 @@ class CreateHotelsTable extends Migration
             $table->string('name');
             $table->string('informations');
             $table->string('contact');
+            $table->string('address');
+            $table->string('image')->nullable();
             $table->timestamps();
         });
     }
