@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Admin\AdminHotelsController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\AttractionsController;
 use App\Http\Controllers\CulinaryController;
@@ -23,4 +24,5 @@ Route::middleware('auth')
     ->prefix('admin')
     ->group(function () {
         Route::resource('admin', AdminController::class);
+        Route::resource('admhotels', AdminHotelsController::class);
     });
