@@ -23,11 +23,11 @@
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 </head>
 
-<body>
+<body style="background-color: #E1E3E3">
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-container-fluid shadow-sm">
+        <nav class="navbar navbar-expand-md navbar-light navbar-background shadow-sm">
             <div class="container">
-                <a class="navbar-brand text-white" href="#">Painel Administrador</a>
+                <a class="navbar-brand text-white" href="{{ route('admin.index') }}">Painel Administrador</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                     aria-label="Toggle navigation">
