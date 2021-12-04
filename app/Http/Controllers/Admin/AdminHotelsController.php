@@ -24,6 +24,7 @@ class AdminHotelsController extends Controller
         $hotel = Hotel::firstOrCreate([
             'name' => $request->name,
             'contact' => $request->contact,
+            'informations' =>$request->informations,
             'address' => $request->address,
         ]);
 
@@ -37,15 +38,19 @@ class AdminHotelsController extends Controller
     public function edit($id)
     {
         $hotel = Hotel::find($id);
+
         return view('admin.hotels.edit', compact('hotel'));
     }
 
-    public function update(Hotel $hotel, Request $request)
+    public function update(Request $request, $id)
     {
+        $hotel = Hotel::find($id);
+
         $hotel->name = $request->name;
         $hotel->informations = $request->informations;
         $hotel->contact = $request->contact;
         $hotel->address = $request->address;
+
         $hotel->save();
 
         return redirect()->route('admhotels.index')->with('success', 'Item atualizado!');
