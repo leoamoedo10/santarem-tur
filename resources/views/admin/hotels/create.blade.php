@@ -9,7 +9,7 @@
         <div class="col-md-7">
             <div class="card">
                 <div class="card-body">
-                    <form action="{{ route('admhotels.store') }}" method="post">
+                    <form action="{{ route('admhotels.store') }}" method="post" enctype="multipart/form-data">
                         @csrf
 
                         <div class="mb-3">
@@ -27,13 +27,13 @@
                             </div>
                         </div>
                         <div class="mb-3">
+                            <label for="image" class="form-label">Imagem</label>
+                            <input type="file" class="form-control" name="image">
+                        </div>
+                        <div class="mb-3">
                             <label for="informations" class="form-label">Descrição</label>
                             <textarea class="form-control" name="informations" id="informations" rows="5"></textarea>
                         </div>
-                        {{-- <div class="mb-3">
-                            <label for="image" class="form-label">Imagem</label>
-                            <input type="file" class="form-control" name="image">
-                        </div> --}}
                         <div class="d-flex justify-content-end">
                             <button class="btn bg-default" type="submit">Salvar</button>
                         </div>
