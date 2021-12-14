@@ -45,10 +45,6 @@
                             <label for="informations" class="form-label">Descrição</label>
                             <textarea class="form-control" name="informations" id="informations" rows="5">{{$hotel->informations}}</textarea>
                         </div>
-                        {{-- <div class="mb-3">
-                            <label for="image" class="form-label">Imagem</label>
-                            <input type="file" class="form-control" name="image">
-                        </div> --}}
                         <div class="d-flex justify-content-end">
                             <button class="btn bg-default" type="submit">Atualizar</button>
                         </div>
