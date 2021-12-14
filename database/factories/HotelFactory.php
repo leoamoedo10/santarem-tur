@@ -26,7 +26,7 @@ class HotelFactory extends Factory
             'informations' => $this->faker->paragraph,
             'contact' => $this->faker->phoneNumber,
             'address' => $this->faker->address,
-            'image' => $this->faker->imageUrl(640, 480)
+            'image_path' => $this->faker->imageUrl(640, 480)
         ];
     }
 }

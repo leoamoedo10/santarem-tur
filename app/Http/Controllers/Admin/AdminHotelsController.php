@@ -21,11 +21,19 @@ class AdminHotelsController extends Controller
 
     public function store(Request $request)
     {
+        $request->validate([
+            'image' => 'required|mimes:png,jpg,jpeg|max:5048'
+        ]);
+
+        $newImageName = time() . '-' . $request->name . '.' . $request->image->extension();
+        $request->image->move(public_path('images'), $newImageName);
+
         $hotel = Hotel::firstOrCreate([
             'name' => $request->name,
             'contact' => $request->contact,
-            'informations' =>$request->informations,
+            'informations' => $request->informations,
             'address' => $request->address,
+            'image_path' => $newImageName
         ]);
 
         if (!$hotel->wasRecentlyCreated) {
@@ -50,7 +58,6 @@ class AdminHotelsController extends Controller
         $hotel->informations = $request->informations;
         $hotel->contact = $request->contact;
         $hotel->address = $request->address;
-
         $hotel->save();
 
         return redirect()->route('admhotels.index')->with('success', 'Item atualizado!');

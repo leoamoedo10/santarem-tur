@@ -14,6 +14,6 @@ class Hotel extends Model
         'informations',
         'contact',
         'address',
-        'image'
+        'image_path'
     ];
 }
