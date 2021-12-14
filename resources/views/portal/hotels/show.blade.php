@@ -7,7 +7,7 @@
 <div class="container my-3" id="main-container">
     <header>
         <div class="heigth-img-show overflow-hidden">
-            <img src="{{ $hotel->image }}" title="{{$hotel->name}}" itemprop="image" class="card-img-top">
+            <img src="{{ asset('images/' . $hotel->image_path) }}" title="{{$hotel->name}}" itemprop="image" class="card-img-top">
         </div>
         <div class="border-bottom pt-2">
             <h1 itemprop="headline" class="card-title">{{$hotel->name}}</h1>

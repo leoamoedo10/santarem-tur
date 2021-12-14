@@ -16,7 +16,7 @@
         <div class="card mb-3 shadow-sm">
             <div class="row no-gutters">
                 <div class="col-md-4 heigth-img overflow-hidden">
-                    <img src="{{$hotel->image}}" title="{{$hotel->name}}" class="img-fluid">
+                    <img src="{{ asset('images/' . $hotel->image_path) }}" title="{{$hotel->name}}" class="img-fluid">
                 </div>
                 <div class="col-md-8">
                     <div class="card-body">
