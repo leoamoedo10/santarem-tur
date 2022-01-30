@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Controllers\Admin\AdminAttractionsController;
+use App\Http\Controllers\Admin\AdminCulinariesController;
+use App\Http\Controllers\Admin\AdminEventsController;
 use App\Http\Controllers\Admin\AdminHotelsController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\AttractionsController;
@@ -25,4 +28,7 @@ Route::middleware('auth')
     ->group(function () {
         Route::resource('admin', AdminController::class);
         Route::resource('admhotels', AdminHotelsController::class);
+        Route::resource('admculinaries', AdminCulinariesController::class);
+        Route::resource('admattractions', AdminAttractionsController::class);
+        Route::resource('admevents', AdminEventsController::class);
     });
