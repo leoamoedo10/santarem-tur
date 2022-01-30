@@ -12,38 +12,21 @@
     </div>
 </div>
 <div class="container">
-    <div class="card mb-3">
-        <div class="row no-gutters">
-            <div class="col-md-4 heigth-img overflow-hidden">
-                <img src="/images/museu-joao-fona.jpg" title="Museu João Fona" class="img-fluid">
-            </div>
-            <div class="col-md-8">
-                <div class="card-body">
-                    <h5 class="card-title">Museu João Fona</h5>
-                    <p class="card-text">Informações</p>
-                    <p class="card-text">
-                        <small class="text-muted">Um texto interessante</small>
-                    </p>
+    @foreach ($attractions as $attraction)
+        <div class="card mb-3 shadow-sm">
+            <div class="row no-gutters">
+                <div class="col-md-4 heigth-img overflow-hidden">
+                    <img src="{{ asset('images/' . $attraction->image_path) }}" title="{{$attraction->name}}" class="img-fluid">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <a href="{{ route('attractions.show', $attraction) }}" class="link-default"><h5 class="card-title">{{$attraction->name}}</h5></a>
+                        <p class="card-text">{{$attraction->informations}}</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="card mb-3">
-        <div class="row no-gutters">
-            <div class="col-md-4 heigth-img overflow-hidden">
-                <img src="/images/alter-do-chao.jpg" title="Alter do Chão" class="img-fluid">
-            </div>
-            <div class="col-md-8">
-                <div class="card-body">
-                    <h5 class="card-title">Alter do Chão</h5>
-                    <p class="card-text">Informações</p>
-                    <p class="card-text">
-                        <small class="text-muted">Um texto interessante</small>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
+    @endforeach
 </div>
 
 @include('components.footer')
