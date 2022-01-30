@@ -7,5 +7,12 @@ use Illuminate\Database\Eloquent\Model;
 
 class Attraction extends Model
 {
-    //
+    use HasFactory;
+
+    protected $fillable = [
+        'name',
+        'informations',
+        'address',
+        'image_path'
+    ];
 }

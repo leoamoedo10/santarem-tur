@@ -15,6 +15,10 @@ class CreateAttractionsTable extends Migration
     {
         Schema::create('attractions', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
+            $table->string('informations');
+            $table->string('address');
+            $table->string('image_path')->nullable();
             $table->timestamps();
         });
     }
