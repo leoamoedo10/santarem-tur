@@ -14,6 +14,10 @@ class HotelsController extends Controller
         return view('portal.hotels.index', compact('hotels'));
     }
 
+    public function create(){
+        return view('hotels.create');
+    }
+
     public function show($id)
     {
         $hotel = Hotel::find($id);

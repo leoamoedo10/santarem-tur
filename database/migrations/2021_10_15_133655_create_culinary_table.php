@@ -15,6 +15,11 @@ class CreateCulinaryTable extends Migration
     {
         Schema::create('culinary', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
+            $table->string('informations');
+            $table->string('contact');
+            $table->string('address');
+            $table->string('image_path')->nullable();
             $table->timestamps();
         });
     }

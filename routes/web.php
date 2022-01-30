@@ -26,3 +26,4 @@ Route::middleware('auth')
         Route::resource('admin', AdminController::class);
         Route::resource('admhotels', AdminHotelsController::class);
     });
+
