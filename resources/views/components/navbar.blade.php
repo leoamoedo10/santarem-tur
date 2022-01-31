@@ -1,7 +1,7 @@
 <div class="navbar-background">
     <div class="container py-5">
         <div class="row d-flex align-items-center mb-5">
-            <div class="col-md-8 align-self-center text-white">
+            <div class="text-white text-center">
                 <h1 class="display-1 mb-0"><strong>SANTARÉM TURISMO</strong></h1>
             </div>
         </div>
