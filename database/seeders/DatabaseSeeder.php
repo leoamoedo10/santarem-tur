@@ -3,7 +3,6 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
-use Database\Seeders\HotelSeeder;
 
 class DatabaseSeeder extends Seeder
 {
@@ -16,7 +15,6 @@ class DatabaseSeeder extends Seeder
     {
         $this->call([
             AdminSeeder::class,
-            HotelSeeder::class
         ]);
     }
 }
